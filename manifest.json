@@ -1,0 +1,19 @@
+{
+  "required_api_version": "2",
+  "name": "Sesh Session Manager",
+  "description": "Quickly find and switch to sesh sessions.",
+  "developer_name": "AI Assistant",
+  "icon": "images/icon.png",
+  "options": {
+    "query_debounce": 0.1
+  },
+  "preferences": [
+    {
+      "id": "sesh_keyword",
+      "type": "keyword",
+      "name": "sesh",
+      "description": "Keyword to list and connect to sesh sessions",
+      "default_value": "sesh"
+    }
+  ]
+}
