@@ -3,7 +3,7 @@
   "name": "Sesh Session Manager",
   "description": "Quickly find and switch to sesh sessions.",
   "developer_name": "Gemini pro 2.5 and human",
-  "icon": "images/icon.png",
+  "icon": "images/sesh-icon.png",
   "options": {
     "query_debounce": 0.1
   },
