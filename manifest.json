@@ -1,8 +1,8 @@
 {
-  "required_api_version": "2",
+  "required_api_version": "^2.0.0",
   "name": "Sesh Session Manager",
   "description": "Quickly find and switch to sesh sessions.",
-  "developer_name": "AI Assistant",
+  "developer_name": "Gemini pro 2.5 and human",
   "icon": "images/icon.png",
   "options": {
     "query_debounce": 0.1
