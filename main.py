@@ -65,7 +65,7 @@ class KeywordQueryEventListener(EventListener):
 
                 items.append(
                     ExtensionResultItem(
-                        icon="images/icon.png",
+                        icon="images/sesh-icon.png",
                         name=f"Connect to: {session_name}",
                         description=f"Path: {session_path}",
                         on_enter=RunScriptAction(connect_command),
@@ -78,7 +78,7 @@ class KeywordQueryEventListener(EventListener):
             LOGGER.error("'sesh' command not found")
             items.append(
                 ExtensionResultItem(
-                    icon="images/icon.png",
+                    icon="images/sesh-icon.png",
                     name="Error: 'sesh' command not found",
                     description="Please ensure 'sesh' is installed and in your system's PATH.",
                     on_enter=HideWindowAction(),
@@ -89,7 +89,7 @@ class KeywordQueryEventListener(EventListener):
             LOGGER.error(f"sesh command failed: {e.stderr}")
             items.append(
                 ExtensionResultItem(
-                    icon="images/icon.png",
+                    icon="images/sesh-icon.png",
                     name="Error executing 'sesh' command",
                     description=e.stderr or "Check Ulauncher logs for details.",
                     on_enter=HideWindowAction(),
@@ -100,7 +100,7 @@ class KeywordQueryEventListener(EventListener):
             LOGGER.error("Failed to parse JSON from sesh command")
             items.append(
                 ExtensionResultItem(
-                    icon="images/icon.png",
+                    icon="images/sesh-icon.png",
                     name="Error parsing sesh output",
                     description="The output from 'sesh' was not valid JSON.",
                     on_enter=HideWindowAction(),
